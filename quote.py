@@ -16,22 +16,12 @@ def display_quote(quote):
     print("   —", quote["a"])
     print()
 
-def main():
-    quote = fetch_quote()
-    if quote:
-        display_quote(quote)
-
 def fetch_multiple_quotes(n):
     for i in range(n):
         quote = fetch_quote()
         if quote:
             print(f"Quote {i+1}:")
             display_quote(quote)
-
-def main():
-    print("=== Quote of the Day Bot ===\n")
-    choice = input("How many quotes do you want? (1-5): ")
-    fetch_multiple_quotes(int(choice))
 
 def main():
     print("=== Quote of the Day Bot ===\n")
