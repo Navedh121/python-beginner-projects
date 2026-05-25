@@ -3,42 +3,29 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
 
-Three command-line utilities built while learning Python and API integration. Each one solves a small real problem.
+Where I started. Three command-line utilities built while learning Python and real API integration. Each one taught me something specific before I moved on to AI web apps and automation bots.
 
 ---
 
 ## Projects
 
-| Script | What it does | API Used |
+| Script | What it does | What it taught me |
 |---|---|---|
-| `weather.py` | Fetches live weather for any city | OpenWeatherMap |
-| `quote.py` | Prints 1–5 random quotes on demand | ZenQuotes (free, no key needed) |
-| `organiser.py` | Sorts a messy folder into subfolders by file type | None (filesystem only) |
-
----
-
-## What I Learned Here
-
-- How HTTP GET requests work (sending params, reading JSON responses)
-- Parsing API responses and pulling out the data you need
-- Storing secrets in `.env` files instead of hardcoding them
-- Basic file I/O with `os` and `shutil`
-
-These were the first projects where "write some Python" turned into "build something that talks to the internet."
+| `weather.py` | Live weather for any city | HTTP GET requests, JSON parsing, `.env` secrets |
+| `quote.py` | Prints 1-5 random quotes on demand | API patterns (request → JSON → extract) |
+| `organiser.py` | Sorts a folder into subfolders by file type | File I/O with `os` and `shutil` |
 
 ---
 
 ## How to Run
 
 ```bash
-# Install dependencies
 pip install -r requirements.txt
 
-# Set your OpenWeatherMap API key
+# For weather.py — add your free OpenWeatherMap key
 cp .env.example .env
-# Edit .env and add: OPENWEATHER_API_KEY=your_key_here
+# Edit .env: OPENWEATHER_API_KEY=your_key_here
 
-# Run any script
 python weather.py
 python quote.py
 python organiser.py
